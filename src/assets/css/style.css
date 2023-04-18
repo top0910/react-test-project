@@ -13,7 +13,14 @@
   height: 100vh;
 }
 
+.trade-container {
+  padding: 2px;
+  border-radius: 30px;
+  background-image: radial-gradient(80.69% 208.78% at 108.28% 112.58%, #E5E54B 0%, rgba(183, 38, 38, 0) 100%), radial-gradient(80.38% 222.5% at -13.75% -12.36%, #E5E54B 0%, rgba(255, 255, 255, 0) 100%);
+}
+
 .trade {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +28,7 @@
   gap: 22px;
 
   width: 464px;
+  border-radius: 30px;
 
   /* background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(0, 0, 0, 0.2) 0%, rgba(4, 4, 4, 0) 100%); */
   background: radial-gradient(ellipse at 15.32% 21.04%,
@@ -32,27 +40,7 @@
   backdrop-filter: blur(20px);
   /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 30px;
-
-  /* border: 2px solid #E5E54B; */
-  /* border: 2px solid; */
-  border: 2px solid;
-  border-image-source: radial-gradient(ellipse at 108.28% 112.58%,
-      #E5E54B 0%,
-      rgba(183, 38, 38, 0) 100%), radial-gradient(ellipse at -13.75% -12.36%,
-      #E5E54B 0%,
-      rgba(255, 255, 255, 0) 100%);
-  border-image-slice: 1;
-  border-image-width: 1;
-  border-image-outset: 0;
-  border-image-repeat: stretch;
-
-
-  /* border: 2px solid; */
-
   /* border-image-source: radial-gradient(80.69% 208.78% at 108.28% 112.58%, #E5E54B 0%, rgba(183, 38, 38, 0) 100%), radial-gradient(80.38% 222.5% at -13.75% -12.36%, #E5E54B 0%, rgba(255, 255, 255, 0) 100%); */
-
-
 }
 
 /**************************************** Setting Bar *******************************************/
@@ -270,4 +258,15 @@
 
   background: #E5E54B;
   border-radius: 14px;
+}
+
+.gradient-temp__layout {
+  position: absolute;
+  top: calc(50% - 101px);
+  left: calc(50% - 103.5px);
+  width: 207px;
+  height: 202px;
+  background: linear-gradient(135deg, #E5E54B 2.88%, #EF5322 98.14%);
+  filter: blur(109px);
+  z-index: -1;
 }
