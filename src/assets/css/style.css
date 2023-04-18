@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  background-color: #1E1E1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.trade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 30px 30px;
+  gap: 22px;
+
+  width: 464px;
+
+  /* background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(0, 0, 0, 0.2) 0%, rgba(4, 4, 4, 0) 100%); */
+  background: radial-gradient(ellipse at 15.32% 21.04%,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(4, 4, 4, 0) 100%);
+
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 30px;
+
+  /* border: 2px solid #E5E54B; */
+  /* border: 2px solid; */
+  border: 2px solid;
+  border-image-source: radial-gradient(ellipse at 108.28% 112.58%,
+      #E5E54B 0%,
+      rgba(183, 38, 38, 0) 100%), radial-gradient(ellipse at -13.75% -12.36%,
+      #E5E54B 0%,
+      rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+
+
+  /* border: 2px solid; */
+
+  /* border-image-source: radial-gradient(80.69% 208.78% at 108.28% 112.58%, #E5E54B 0%, rgba(183, 38, 38, 0) 100%), radial-gradient(80.38% 222.5% at -13.75% -12.36%, #E5E54B 0%, rgba(255, 255, 255, 0) 100%); */
+
+
+}
+
+/**************************************** Setting Bar *******************************************/
+
+.settingBar {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.space {
+  flex: 1;
+}
+
+.settingItem {
+  margin-left: 16px;
+}
+
+/**************************************** Swap Section *******************************************/
+
+.swap-section {
+  height: 46px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.swap-section .line {
+  position: absolute;
+  border: none;
+  border-bottom: 1px solid #101010;
+
+  width: 100%;
+  top: 50%;
+  z-index: -1;
+}
+
+/**************************************** Display Section *******************************************/
+
+.display {
+  padding: 14px 18px;
+
+  width: 416px;
+  height: 105px;
+
+  background: #101010;
+  border-radius: 24px;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  color: #7185AA;
+}
+
+.desc h3 {
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.desc h4 {
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.display .data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display h1 {
+  color: white;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.display .min {
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 20px;
+  color: white;
+  padding: 1.5px 10px;
+  border: 0.5px solid #E5E54B;
+  border-radius: 7px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.display .wallet {
+  width: 99px;
+  height: 40px;
+
+  background: #141822;
+  border-radius: 24px 6px 6px 24px;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallet .name {
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0px 8px 0px 4px;
+}
+
+/**************************************** Size Section *******************************************/
+
+.size-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.size-item {
+  padding: 8px;
+  gap: 10px;
+
+  width: 85px;
+
+  background: #101010;
+  border: 1.5px solid #1D2A43;
+  border-radius: 7px;
+  color: #637488;
+  text-align: center;
+}
+
+/**************************************** Info Section *******************************************/
+
+.info {
+  padding: 16px 18px;
+  gap: 10px;
+
+  width: 416px;
+
+  background: #101010;
+  border-radius: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .text h5 {
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 15px;
+  line-height: 19px;
+  color: white;
+}
+
+.info .text h6 {
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 15px;
+  line-height: 19px;
+  color: #637488;
+}
+
+.info .extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .extra h6 {
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 15px;
+  line-height: 19px;
+  color: #637488;
+  margin-right: 10px;
+  margin-left: 4px;
+}
+
+/**************************************** Swap Button *******************************************/
+
+.swap {
+  padding: 0px 32px;
+  gap: 10px;
+
+  width: 404px;
+
+  background: #E5E54B;
+  border-radius: 14px;
+  color: white;
+  padding: 16px 32px;
+  gap: 10px;
+
+
+  background: #E5E54B;
+  border-radius: 14px;
+}
